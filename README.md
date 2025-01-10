@@ -18,7 +18,7 @@ Running 50/50 sync and async will hang:
 bundle && bundle exec ruby test.rb 0.5 # hangs
 ```
 
-So does running with only sync, no async:
+So does running with only async, no sync:
 
 ```
 bundle && bundle exec ruby test.rb 1 # hangs

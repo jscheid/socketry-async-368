@@ -1,0 +1,7 @@
+services:
+  test:
+    image: ruby:3.4.1-bullseye
+    volumes: ['.:/app']
+    environment: ['ASYNC_PERCENT']
+    working_dir: /app
+    command: ["bash", "-c", "bundle && bundle exec ruby test.rb $$ASYNC_PERCENT"]
